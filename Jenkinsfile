@@ -7,7 +7,7 @@ pipeline {
         stage ('build') {
           steps {
             sh 'echo build'
-            sh 'npm install'
+            sh 'mvn package'
           }
         }
         stage ('test') {
